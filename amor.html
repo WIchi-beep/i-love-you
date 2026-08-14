@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You 🩵🪽</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #061826, #0b3047, #061826);
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .contenedor {
+            text-align: center;
+            animation: aparecer 2s ease;
+        }
+
+        .emoji {
+            font-size: 70px;
+            margin-bottom: 15px;
+            animation: flotar 2s ease-in-out infinite;
+        }
+
+        h1 {
+            color: #d9f7ff;
+            font-size: 70px;
+            text-shadow:
+                0 0 10px #8deaff,
+                0 0 20px #5bdcff,
+                0 0 40px #2bcfff;
+            animation: brillo 2s ease-in-out infinite alternate;
+        }
+
+        p {
+            color: #bdefff;
+            font-size: 25px;
+            margin-top: 15px;
+        }
+
+        @keyframes flotar {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes brillo {
+            from {
+                text-shadow:
+                    0 0 10px #8deaff,
+                    0 0 20px #5bdcff;
+            }
+
+            to {
+                text-shadow:
+                    0 0 20px #8deaff,
+                    0 0 40px #5bdcff,
+                    0 0 60px #2bcfff;
+            }
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .corazon {
+            position: absolute;
+            color: #9eeaff;
+            font-size: 25px;
+            animation: subir 6s linear infinite;
+            bottom: -50px;
+        }
+
+        .c1 { left: 10%; animation-delay: 0s; }
+        .c2 { left: 30%; animation-delay: 2s; }
+        .c3 { left: 50%; animation-delay: 4s; }
+        .c4 { left: 70%; animation-delay: 1s; }
+        .c5 { left: 90%; animation-delay: 3s; }
+
+        @keyframes subir {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="corazon c1">🩵</div>
+    <div class="corazon c2">🪽</div>
+    <div class="corazon c3">🩵</div>
+    <div class="corazon c4">🪽</div>
+    <div class="corazon c5">🩵</div>
+
+    <div class="contenedor">
+        <div class="emoji">🩵 🪽</div>
+
+        <h1>I Love You</h1>
+
+        <p>🩵 Siempre contigo 🪽</p>
+    </div>
+
+</body>
+</html>
